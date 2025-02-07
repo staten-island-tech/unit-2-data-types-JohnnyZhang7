@@ -1,11 +1,11 @@
-# Strings represent characters. names. words
+""" # Strings represent characters. names. words
 name = "a"
 #integers for WHOLE numbers
 age = 14
 #BooLean is True or False, typically used for evaluations
 graduated = False
 #Floats for decimal
-money = 4.50
+money = 4.50 """
 
 """ def add(x,y):
     print(round(x + y))
@@ -36,10 +36,6 @@ x=0 """
 
 
 
-
-
-
-
 """ x = 3
 y = float(3)
 print(x,y) """
@@ -61,8 +57,53 @@ z = y[0]
 print(y)
 print(z) """
 
-word = string = "a b c d e"
+""" word = string = "a b c d e"
 words = string.split()         #splits the string and returns how many words
 word_count = len(words)     #counts the number of elements in the list
 print(word)
-print(word_count)
+print(word_count) """
+
+""" #MADLIB PROJECT
+name = "Jonathan"
+emotion = "excited"
+verb = "jumping"
+print(f"Today is {name} birthday and he is super {emotion}, {verb} around everywhere.")
+number = "7"
+celebrityname = "George Washington"
+print(f"There was {number} presents on his desk and his favorite celebrity, {celebrityname} was there!")
+emotion2 = "excitement"
+verb2 = "ran"
+emotion3 = "joy"
+print(f"Overwhelmed by the {emotion2}, he {verb2} out of the house in {emotion3}") """
+
+""" day_of_week = input("what day is it? ")     #Only has two answers which vary based on your answer
+if day_of_week == "Friday":
+    print("correct")
+else:
+    print("incorrect") """
+
+x = "test"
+print(f"hello {x}")
+temp = 68               #code creates conditions and if their met will give you said response
+if temp > 68:
+    print('warm')
+elif temp == 68:
+    print('perfect')
+else:
+    print('cold')
+
+def evenodd(number):
+    if number % 2 == 0:  #divides number by 2 to check if its even or odd
+        return "Even"
+    else:
+        return "Odd"
+evenodd(int)
+
+#LESSON
+def login(password):
+    #If statement evaluates as true, run next line
+    if(password) == "secret":
+        print("logged in")
+    else:
+        print("incorrect password")
+login("secret")
