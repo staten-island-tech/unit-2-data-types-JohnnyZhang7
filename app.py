@@ -5,7 +5,9 @@ age = 14
 #BooLean is True or False, typically used for evaluations
 graduated = False
 #Floats for decimal
-money = 4.50 """
+money = 4.50
+#Lists can be a collection of multiple data types in a single variable
+list = [1, 2, 3] """
 
 """ def add(x,y):
     print(round(x + y))
@@ -82,7 +84,7 @@ if day_of_week == "Friday":
 else:
     print("incorrect") """
 
-x = "test"
+""" x = "test"
 print(f"hello {x}")
 temp = 68               #code creates conditions and if their met will give you said response
 if temp > 68:
@@ -90,20 +92,36 @@ if temp > 68:
 elif temp == 68:
     print('perfect')
 else:
-    print('cold')
+    print('cold') """
 
-def evenodd(number):
-    if number % 2 == 0:  #divides number by 2 to check if its even or odd
-        return "Even"
+#EVEN ODD CHALLENGE
+#use modeulo to check remainder for 1 factor
+#use a loop to check all potential factors range(2,15)
+#conditional statement if factor append to list
+#print the list
+""" def evenodd(number):
+    if number % 2 ==0:
+        return "even"
     else:
-        return "Odd"
-evenodd(int)
+        return "odd"
+number = [2, 5, 6, 7]
+for num in number:
+    print(f"{num} is {evenodd(num)}") """   #I searched this up, it loops through using a f string to define each one
+
+#BILL AND TIP CHALLENGE
+def total(bill, tip):
+    return bill + (bill * tip)
+
+bill = 15
+service = "bad, okay, good, great"
+
+
 
 #LESSON
-def login(password):
+""" def login(password):
     #If statement evaluates as true, run next line
     if(password) == "secret":
         print("logged in")
     else:
         print("incorrect password")
-login("secret")
+login("secret") """
