@@ -109,14 +109,36 @@ for num in number:
     print(f"{num} is {evenodd(num)}") """   #I searched this up, it loops through using a f string to define each one
 
 #BILL AND TIP CHALLENGE
-def total(bill, tip):
+""" def total(bill, service):
+    
+    if service == "bad":
+        tip = 0.00
+    if service == "okay":
+        tip = 0.15
+    if service == "good":
+        tip = 0.20
+    if service == "great":
+        tip = 0.25
     return bill + (bill * tip)
+bill = float(input("bill amount"))
+service = (input("how good was the service"))
+print("Total bill is:", total(bill, service)) """
 
-bill = 15
-service = "bad, okay, good, great"
+#if factor = true add to list
+#loop from 2 to Y for i in range(2,15)
+#if x isfactor and y isfactor then add to list
+    
 
+x = 5
+y = 15
+def factor(x, y):
 
-
+    factorcount = 0
+    for i in range(5, 16):
+        if x % i == 0 and y % i == 0:
+            factorcount +=1
+    return factorcount
+print(factor(x,y))
 #LESSON
 """ def login(password):
     #If statement evaluates as true, run next line
@@ -125,3 +147,15 @@ service = "bad, okay, good, great"
     else:
         print("incorrect password")
 login("secret") """
+
+#2/11/25 Lesson
+""" isRich= True
+is21 = True
+
+def canGamble(isRich, is21):
+    if isRich == True and is21 == True:
+        print("Let is ride!")
+    elif isRich == False and is21 == True:
+        print("Your too poor, get out")
+    elif isRich == False or is21 == False:
+        print("you cannot play") """
