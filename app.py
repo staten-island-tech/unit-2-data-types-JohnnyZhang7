@@ -125,20 +125,31 @@ service = (input("how good was the service"))
 print("Total bill is:", total(bill, service)) """
 
 #if factor = true add to list
-#loop from 2 to Y for i in range(2,15)
+#loop from 2 to Y for i in range(2,16)
 #if x isfactor and y isfactor then add to list
     
-
-x = 5
-y = 15
+""" x = 8
+y = 16
 def factor(x, y):
-
     factorcount = 0
-    for i in range(5, 16):
-        if x % i == 0 and y % i == 0:
-            factorcount +=1
+    for i in range(1, 17):   #chatgpt told me I can also use (1, min(x,y) + 1) which is "more efficient". Probably bc i need to change it every time the x and y changes
+        if x % i == 0 and y % i == 0:   #Check if i is a factor of x/y
+            factorcount +=1         #Adds for each factor is counted
     return factorcount
-print(factor(x,y))
+print(factor(x,y)) """
+
+def findGCF(x, y):  #This makes it so that while y is not equal to 0, it makes x divide by y and replace x with the remainder after.
+    while y !=0:       #This repeats until y = 0
+        x, y = y, x % y
+    return x
+
+variable1 =int(input("What is the first number?:"))     #USE int in front to CONVERT INTO INTEGER!!!
+variable2 =int(input("What is the second number?:"))
+gcf = findGCF(variable1, variable2)                     #2 arguments
+print(f"The gcf between {variable1} and {variable2} is {gcf}")
+
+
+
 #LESSON
 """ def login(password):
     #If statement evaluates as true, run next line
