@@ -138,15 +138,22 @@ def factor(x, y):
     return factorcount
 print(factor(x,y)) """
 
-def findGCF(x, y):  #This makes it so that while y is not equal to 0, it makes x divide by y and replace x with the remainder after.
-    while y !=0:       #This repeats until y = 0
-        x, y = y, x % y
-    return x
-
-variable1 =int(input("What is the first number?:"))     #USE int in front to CONVERT INTO INTEGER!!!
-variable2 =int(input("What is the second number?:"))
-gcf = findGCF(variable1, variable2)                     #2 arguments
-print(f"The gcf between {variable1} and {variable2} is {gcf}")
+number1 = int(input("What is the first number"))    #In order to counteract the normal input string type, put integer in front of it.
+number2 = int(input("What is the second number"))
+divisibles = list(range(1, 21))
+list_factors1 = []
+list_factors2 = []
+common_factors = []
+for num in divisibles:      #makes num individual values inside the string so we can divide them.
+    if number1 % num == 0:
+        list_factors1.append(num)
+    if number2 % num == 0:
+        list_factors2.append(num)
+for factor in list_factors1:        #I used chatgpt to finish the code because idk how to but it follows the same principles as before
+    if factor in list_factors2:     #Groups the common factors so I can use max() code    
+        common_factors.append(factor)
+gcf = max(common_factors)
+print(gcf)
 
 
 
