@@ -59,11 +59,11 @@ z = y[0]
 print(y)
 print(z) """
 
-""" word = string = "a b c d e"
+word = string = "a b c d e"
 words = string.split()         #splits the string and returns how many words
 word_count = len(words)     #counts the number of elements in the list
 print(word)
-print(word_count) """
+print(word_count)
 
 """ #MADLIB PROJECT
 name = "Jonathan"
